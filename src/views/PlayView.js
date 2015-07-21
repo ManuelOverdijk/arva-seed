@@ -7,6 +7,7 @@
 import Surface              from 'famous/core/Surface.js';
 import {View}               from 'arva-mvc/core/View.js';
 import _                    from 'lodash';
+import {Button}               from '../components/Button.js'
 
 export class PlayView extends View {
     constructor(options = {}){
@@ -19,16 +20,7 @@ export class PlayView extends View {
             }
         });
 
-        this.renderables.button = new Surface({
-            content: 'First View',
-            properties: {
-                'background-color':"#fff",
-                'border-radius':'5px',
-                'text-align':'center',
-                'padding-top':'9px',
-                'cursor':'pointer'
-            }
-        });
+        this.renderables.button = new Button('First View');
 
         /* Tell famous-flex how to render our components in Famous. */
         this.layouts.push((context) => {
