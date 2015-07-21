@@ -1,25 +1,28 @@
 /**
+ * Created by manuel on 21-07-15.
+ */
+/**
  * Created by tom on 17/07/15.
  */
 import Surface              from 'famous/core/Surface.js';
 import {View}               from 'arva-mvc/core/View.js';
 import _                    from 'lodash';
 
-export class HomeView extends View {
+export class PlayView extends View {
     constructor(options = {}){
         super();
 
         /* Create the renderable components we want to show in this view. */
         this.renderables.background = new Surface({
             properties: {
-                'background-color': '#3399cc'
+                'background-color': '#00e4d6'
             }
         });
 
         this.renderables.button = new Surface({
-            content: 'Second View',
+            content: 'First View',
             properties: {
-                'background-color':"#e6e6e6",
+                'background-color':"#fff",
                 'border-radius':'5px',
                 'text-align':'center',
                 'padding-top':'9px',

@@ -9,6 +9,7 @@ import {App}                    from './App.js';
 
 /* Importing CSS in jspm bundled builds injects them into the DOM automagically */
 import famousCSS                from 'famous/core/famous.css!';
+import customCSS                from './css/style.css!';
 
 start();
 
